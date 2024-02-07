@@ -10,19 +10,126 @@
             padding: 0;
             box-sizing: border-box;
         }
+        .container{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .form{
+            display: flex;
+            justify-content: center;
+        }
+        .form .row{
+            /* width: 500px; */
+            background-color: aquamarine;
+            padding: 1%;
+        }
+        label{
+            display: block;
+            margin: 5px 0;
+
+        }
+        button{
+            display: block;
+            padding: .5rem 1rem;
+            margin: .8rem 0;
+            cursor: pointer;
+
+        }
+        .card-container{
+            padding: 6% 0;
+        }
+        .card-container .row{
+            display: flex;
+            gap: 16px;
+        }
+        .card{
+            width: 200px;
+            background-color: antiquewhite;
+            padding: .5rem 1rem;
+            position: relative;
+
+        }
+        span{
+            position: absolute;
+            right: 6%;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
-    <h1>local Storage</h1>
-    <p>We can do Three things in Local Storage</p>
-    <ul>
-        <li>Add</li>
-        <li>receive</li>
-        <li>delete</li>
+    <!-- <h1>local Storage</h1> -->
+    <!-- <p>We can do Three things in Local Storage</p> -->
+    <!-- <ul> -->
+        <!-- <li>Add</li> -->
+        <!-- <li>receive</li> -->
+        <!-- <li>delete</li> -->
+    <!-- </ul> -->
+    <!-- <p>Problem in local storage</p> -->
+    <!-- <p>data should be in string format only. </p> -->
+    <!-- <p>in order to send multiple entries in local storage we should use json. Array of data will be changed into json and at the time of call json will be changed in array. </p> -->
+    <div class="container form">
+        <div class="row">
+            <div class="column">
+                <h2>Enter Your Details </h2>
+                <form action="">
+                    <label for="">Name</label>
+                    <input type="text" id="name">
+                    <label for="">Phone</label>
+                    <input type="number" id="phone">
+                    <label for="">Email</label>
+                    <input type="email" id="email">
+                    <button>Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container card-container">
+        <div class="row ">
+            <div class="column card">   
+                <span>&#10006;</span>
+                <h5>Name</h5>
+                <p>Shekhar</p>
 
-    </ul>
-    <p>Problem in local storage</p>
-    <p>data should be in string format only. </p>
-    <p>in order to send multiple entries in local storage we should use json. Array of data will be changed into json and at the time of call json will be changed in array. </p>
+                <h5>Email</h5>
+                <p>Shekhar@test.com</p>
+
+                <h5>Phone</h5>
+                <p>9876543210</p>
+            </div>
+            <div class="column card">   
+                <span>&#10006;</span>
+                <h5>Name</h5>
+                <p>Shekhar</p>
+
+                <h5>Email</h5>
+                <p>Shekhar@test.com</p>
+
+                <h5>Phone</h5>
+                <p>9876543210</p>
+            </div>
+            <div class="column card">   
+                <span>&#10006;</span>
+                <h5>Name</h5>
+                <p>Shekhar</p>
+
+                <h5>Email</h5>
+                <p>Shekhar@test.com</p>
+
+                <h5>Phone</h5>
+                <p>9876543210</p>
+            </div>
+            <div class="column card">   
+                <span>&#10006;</span>
+                <h5>Name</h5>
+                <p>Shekhar</p>
+
+                <h5>Email</h5>
+                <p>Shekhar@test.com</p>
+
+                <h5>Phone</h5>
+                <p>9876543210</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
